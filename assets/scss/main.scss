@@ -1,3 +1,7 @@
+html {
+  overflow-y: auto !important; // to override vuetify's overflow-y: scroll
+}
+
 body {
   margin: 0;
   height: 100%;
@@ -6,19 +10,4 @@ body {
 video {
   max-width: 100%;
   max-height: 100%;
-}
-
-.fade-enter-to,
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave-to,
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: 0.5s all ease;
 }
