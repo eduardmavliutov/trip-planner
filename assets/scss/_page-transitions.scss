@@ -1,0 +1,64 @@
+// Default transitions for route changes
+.route-change {
+  &-enter-active,
+  &-leave-active {
+    transition: 0.3s opacity ease;
+  }
+  &-enter,
+  &-leave-to {
+    opacity: 0;
+  }
+
+  &-enter-to,
+  &-leave {
+    opacity: 1;
+  }
+}
+
+// Transitions for route changes between quiz questions
+.route-change {
+  &-left {
+    &-enter-active,
+    &-leave-active {
+      transition: 0.4s all ease-out;
+    }
+
+    &-enter {
+      opacity: 0;
+      transform: translateX(120%);
+    }
+
+    &-leave-to {
+      opacity: 0;
+      transform: translateX(-60%);
+    }
+
+    &-enter-to,
+    &-leave {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  &-right {
+    &-enter-active,
+    &-leave-active {
+      transition: 0.5s all ease-out;
+    }
+
+    &-enter {
+      opacity: 0;
+      transform: translateX(-20%);
+    }
+
+    &-leave-to {
+      opacity: 0;
+      transform: translateX(20%);
+    }
+
+    &-enter-to,
+    &-leave {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+}

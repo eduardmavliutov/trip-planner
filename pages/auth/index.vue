@@ -9,7 +9,8 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
-  layout: 'main'
+  layout: 'main',
+  transition: 'route-change-right'
 })
 export default class AuthPage extends Vue {
 
