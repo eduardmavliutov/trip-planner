@@ -39,7 +39,7 @@
     </v-navigation-drawer>
 
     <v-app-bar
-      color="green darken-1"
+      class="header__bar"
       clipped-left
       fixed
       dark
@@ -111,6 +111,9 @@ export default class TheHeader extends Vue {
     }
   }
 
+  &__bar {
+    background-color: $color-green--main;
+  }
 }
 
 </style>
